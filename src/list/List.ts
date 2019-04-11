@@ -128,7 +128,9 @@ export default class List {
 					headers: utils.headers.getUpdateHeaders(digest, item["__metadata"].etag),
 				};
 
-				return this._dao.post(item["__metadata"].uri, updates, customOptions);
+				var updateUri = this.baseUrl+"/items("+itemId+")";
+
+				return this._dao.post(updateUri, updates, customOptions);
 			});
 		});
 	}
@@ -140,8 +142,26 @@ export default class List {
 				var customOptions = {
 					headers: utils.headers.getDeleteHeaders(digest, item["__metadata"].etag),
 				};
-				return this._dao.post(item["__metadata"].uri, "", customOptions);
+				var deleteUri = this.baseUrl+"/items("+itemId+")";
+
+                return this._dao.post(deleteUri, "", customOptions);
 			});
+		});
+	}
+
+	deleteItemsWithKey(keyField: string, key: any, digest?: string){
+		return this._dao.auth.ensureRequestDigest(digest).then(digest => {
+			return this.findItems(keyField, key).then(items => {
+				return Promise.all(items.map((item) => {
+					var customOptions = {
+						headers: utils.headers.getDeleteHeaders(digest, item["__metadata"].etag),
+					};
+	
+					var deleteUri = this.baseUrl+"/items("+item.Id+")";
+	
+					return this._dao.post(deleteUri, "", customOptions);
+				})
+			)});
 		});
 	}
 
