@@ -86,9 +86,9 @@ var ctx = SPScript.createContext(siteUrl);
 -   `ctx.lists(listname).permissions.getRoleAssignments()` - Gets you an array of permissions that have been setup for that list. Each permission object has a `member` (the user or group) and a `roles` array (the permissions that user or group has).
 -   `ctx.lists(listname).permissions.check()` - Looks up the permissions of the current user.
 -   `ctx.lists(listname).permissions.check(email)` - Looks up a user by their email address, then gets the permissions that user has for that list. Similiar to "Check Permissions".
-    `ctx.lists(listname).getItemAttachmentsById(id)` - gets you all attachments attached in list wit provided `id`.
-    `ctx.lists(listname).deleteItemAttachment(id, fileTitle)` - delete attachment with desired title from list with provided `id`
-    `ctx.lists(listname).addItemAttachment(id, file)` - adds attachment with provided `File` object (conversion to binary string) to list with provided `id`
+-   `ctx.lists(listname).getItemAttachmentsById(id)` - gets you all attachments attached in list wit provided `id`.
+-   `ctx.lists(listname).deleteItemAttachment(id, fileTitle)` - delete attachment with desired title from list with provided `id`
+-   `ctx.lists(listname).addItemAttachment(id, file)` - adds attachment with provided `File` object (conversion to binary string) to list with provided `id`
 
 
 ### Search

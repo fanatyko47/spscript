@@ -1,6 +1,6 @@
 {
 	"name": "spscript-b",
-	"version": "4.2.3",
+	"version": "4.2.4",
 	"description": "ShareP0oint Rest Api Wrappers",
 	"main": "lib/index.js",
 	"types": "lib/index.d.ts",
@@ -15,7 +15,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/DroopyTersen/spscript"
+		"url": "https://github.com/fanatyko47/spscript"
 	},
 	"keywords": [
 		"sharepoint",
@@ -24,11 +24,11 @@
 		"microsoft",
 		"office"
 	],
-	"author": "Andrew Petersen",
+	"author": "Andrew Petersen modified by Beniamin Szantar",
 	"bugs": {
-		"url": "https://github.com/DroopyTersen/spscript/issues"
+		"url": "https://github.com/fanatyko47/spscript/issues"
 	},
-	"homepage": "https://github.com/DroopyTersen/spscript",
+	"homepage": "https://github.com/fanatyko47/spscript",
 	"devDependencies": {
 		"@types/jest": "^24.0.11",
 		"chai": "^1.10.0",
