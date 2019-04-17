@@ -1,5 +1,5 @@
 {
-	"name": "spscript",
+	"name": "spscript-b",
 	"version": "4.2.1",
 	"description": "ShareP0oint Rest Api Wrappers",
 	"main": "lib/index.js",
