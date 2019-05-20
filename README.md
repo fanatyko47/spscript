@@ -1,19 +1,10 @@
+
+# I only modify work of DroopyTersen for specific usage, use original package for your project :)
+### Original package -> Visit [https://spcript.com](https://spscript.com) for full documentation.
+
 # SPScript
 
 ---
-
-[![Join the chat at https://gitter.im/DroopyTersen/spscript](https://badges.gitter.im/DroopyTersen/spscript.svg)](https://gitter.im/DroopyTersen/spscript?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-### Visit [https://spcript.com](https://spscript.com) for full documentation.
-
-SPScript is a collection of javascript helpers for the SharePoint Rest API. Some features include...
-
--   Easy querying of list data.
--   Add and Update list items in 1 line of code.
--   Easily utilize SharePoint search
--   Work with the Profile Service
--   Check permissions on sites and lists
--   Work with CustomActions
 
 ## Getting Started
 
