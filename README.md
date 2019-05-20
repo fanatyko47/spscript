@@ -1,5 +1,5 @@
 
-- I only modify work of DroopyTersen for specific usage, use original package for your project :)
+# I only modify work of DroopyTersen for specific usage, use original package for your project :)
 
 
 # SPScript
