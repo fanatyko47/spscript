@@ -58,6 +58,12 @@ var ctx = SPScript.createContext(siteUrl);
 -   `ctx.web.permissions.getRoleAssignments()` - Gets you an array of permissions that have been setup for that site. Each permission object has a `member` (the user or group) and a `roles` array (the permissions that user or group has).
 -   `ctx.web.permissions.check()` - Looks up the permissions of the current user.
 -   `ctx.web.permissions.check(email)` - Looks up a user by their email address, then gets you a list of permissions that user has for your site. Similiar to "Check Permissions".
+-   `ctx.web.permissions.getRoleDefinitionId(name)` - Find role ID for specified `name`.
+-   `ctx.web.createFolder(libraryUrl, folderTitle)` - Creates folder within specified `libraryUrl` with name `folderTitle`
+-   `ctx.web.breakRoleInheritanceForFolder(folderUrl)` - Breakes role inheritance for folder with specified relative `folderUrl`
+-   `ctx.web.clearFolderPermissionRoleForGroup(fileUrl, targetId)` - Clears all permissions for specified group or user ID `targetId`, for file at relative `fileUrl`
+-   `ctx.web.assignPermissionRoleForFolder(fileUrl, permissionId, targetId)` - Sets specified permission `permissionId`, for file at relatve `fileUrl`, for provided group or user ID `targetId`
+
 
 ### List & List Items
 
